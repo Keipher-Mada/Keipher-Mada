@@ -1,9 +1,37 @@
+h1 {
+  font-size: 120px;
+}
 
+.project-title h1{
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 100px;
+  align-items: center;
+
+}
+
+.buffer {
+  background-color: #000ea9;
+  margin: 0PX;
+  padding: 30PX;
+  }
+
+.buffer2 {
+  position: relative;
+  margin: 100PX;
+  padding: 30PX;
+      }
+
+.project-title {
+  background-color:  #0EB9FEFE;
+  margin: 0PX;
+  padding: 30PX;
+    }
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
 .video-wrap {
-  z-index: -100;
+  z-index: ;
 }
 
 .custom-video {
@@ -11,7 +39,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  width: 100%;
+  width: 1100px;
   height: 100%;
 }
 
@@ -28,7 +56,7 @@ video{
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  left: 200px;
   margin-top: 0px;
 }
 
@@ -48,8 +76,9 @@ video{
   position: relative;
   overflow: hidden;
   padding-top: 10px;
-  height: calc(100vh - 51px);
+  height: calc(100vh - 05px);
 }
+
 
 .hero-section small {
   color: var(--white-color);
@@ -72,100 +101,28 @@ video{
   height: 100%;
 }
 
-
-/*---------------------------------------
-  ABOUT              
------------------------------------------*/
-.about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
-  background-color: #704010;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-image {
-  border-radius: var(--border-radius-medium);
-  display: block;
-}
-
-.about-text-wrap {
-  position: relative;
-}
-
-.about-text-icon {
-  background: var(--primary-color);
-  border-radius: 100%;
-  font-size: var(--h3-font-size);
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-}
-
-.about-text-info {
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: var(--border-radius-medium);
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 20px;
-  padding: 35px;
-}
-
-
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
-.site-footer {
-  background-color: var(--dark-color);
-  position: relative;
-  overflow: hidden;
+.footer {
+  font-size: 16px;
   padding-bottom: 30px;
 }
 
-.site-footer-top {
-  background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
-  background-repeat: no-repeat;
-  margin-bottom: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.ab-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
-.site-footer-bottom {
-  border-top: 1px solid #1f1c1c;
-  margin-top: 60px;
+.icon {
+  padding-top: 20px;
+  margin-right: 10px;
+  width:30px;
 }
-
-.site-footer-title {
-  color: var(--primary-color); 
-}
-
-.site-footer-link,
-.copyright-text {
-  color: var(--white-color);
-}
-
-.site-footer-links {
-  padding-left: 0;
-}
-
-.site-footer-link-item {
-  list-style: none;
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.copyright-text {
-  font-size: var(--copyright-font-size);
-}
-
 
 
 /*---------------------------------------
@@ -173,7 +130,7 @@ video{
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 62px;
+    font-size: 42px;
   }
 
   h2 {

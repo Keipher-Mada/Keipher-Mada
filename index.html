@@ -1,13 +1,11 @@
 <!doctype html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Festava Live - Bootstrap 5 CSS Template</title>
+        <title>Portflio for Keipher</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
                 
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,10 +29,8 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
 
          <!-- partial -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'>
-
-        </script><script  src="./script.js"></script>
-
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+        
     </head>
     
 <body>
@@ -46,20 +44,20 @@
                         <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">
-                                    <img src="/Resources/Github.png" width="110">
+                                <a class="nav-link click-scroll" href="https://github.com/Keipher-Mada/Keipher-Mada.io">
+                                    <img src="Resources/Github.png" width="110">
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">
-                                    <img src="/Resources/Project.png" width="110">
+                                <a class="nav-link click-scroll" href="#Projects">
+                                    <img src="Resources/Project.png" width="110">
                                 </a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">
-                                    <img src="/Resources/Contact.png" width="110">
+                                <a class="nav-link click-scroll" href="#About">
+                                    <img src="Resources/About.png" width="110">
                                 </a>
                             </li>
 
@@ -69,31 +67,58 @@
                 </div>
             </nav>
             
-
+<!--video and overlay-->
     <section class="hero-section" id="section_1">
         <div class="section-overlay">
         </div>
 
-        <div class="video-wrap">
-            <video preload="auto" autoplay="" playsinline muted class="custom-video" >
-                <source src="Resources/Edited.mp4" type="video/mp4">
+        <div class="video-wrap"> 
+            <video class="custom-video" id="vid1" playsinline preload="auto" autoplay muted>
+                <source src="/video/vid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
+            </video>
+            <video class="custom-video" id="vid2" playsinline muted control loop style="display:none">
+                <source src="/video/vid2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
             </video>
         </div>
     </section>
+
+    <script>
+      var vid = document.getElementById("vid1");
+      var vid2 = document.getElementById("vid2");
+      vid.onended = function() {
+          vid2.style.display = "block";
+          vid2.play();
+  
+      };
+      </script>
+
+<!--project section-->
+<section class="project">
+   <div class="buffer">
+    <span></span>
+   </div>
+</section>
+
+<section class="project" id="Projects">
+  <div class="project-title">
+   <h1>PROJECTS</h1>
+  </div>
+</section>
 
 <!-- project slide bar-->
 <body>
   <!-- partial:index.partial.html -->
   <div class="swiper-container main-slider loading">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper big-img">
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700589169.jpg)">
-          <img src="/images/Comic.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/Cards.png);">
+          <img src="/images/Cards.png" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Shaun Matthews</p>
-          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <a href="https://keipher-mada.github.io/Mrvel_memory_game/" class="title">Marvel snap memory game</a>
+          <span class="caption">Simple memory pair game inspired by the art of marvel snap (html, css and Javascript)</span>
         </div>
       </div>
       <div class="swiper-slide">
@@ -101,35 +126,35 @@
           <img src="/images/cat.jpg" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Alexis Berry</p>
-          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <a href="https://cat2142.wordpress.com/" class="title">Cat shelter website</a>
+          <span class="caption"> A mock cat shelter site using the power of word press</span>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2016/11/19/14/55/design-1839702_1280.jpg)">
-          <img src="/images/prime.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/Prime.png);">
+          <img src="/images/Prime.png" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Billie	Pierce</p>
-          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <a href="https://github.com/Keipher-Mada/Prime/blob/master/PRIME.MAIN.py" class="title">Prime number calculator</a>
+          <span class="caption">Want to know how many prime numbers you have in a set? check out this simple python code</span>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124672.jpg?w=996&t=st=1705341187~exp=1705341787~hmac=b7c8124f15859a32d08c7173f3de683122a0515bbc0d9d8ae0ec129ed697b894)">
-          <img src="/images/ai.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/AI.png);">
+          <img src="/images/AI.png" class="entity-img" >
         </figure>
         <div class="content">
-          <p class="title">Trevor	Copeland</p>
-          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <a href="https://github.com/Keipher-Mada/AI-" class="title">AI image genertor</a>
+          <span class="caption">Text to image generator assist by Open Ai</span>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg)">
-          <img src="/images/cs.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/CS.png);">
+          <img src="/images/CS.jpg" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Bernadette	Newman</p>
-          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <p class="title">Coming soon</p>
+          <span class="caption"></span>
         </div>
       </div>
     </div>
@@ -139,14 +164,14 @@
   </div>
   
   <!-- Thumbnail navigation -->
-  <div class="swiper-container nav-slider loading">
+  <div class="swiper-container nav-slider loading" style="background-color: #dfe6e9">
     <div class="swiper-wrapper" role="navigation">
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700589169.jpg)">
-          <img src="/images/Comic.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/Cards.png);">
+          <img src="/images/Cards.png" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Shaun Matthews</p>
+          <p class="title">Marval snap memory game</p>
         </div>
       </div>
       <div class="swiper-slide">
@@ -154,31 +179,31 @@
           <img src="/images/cat.jpg" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Alexis Berry</p>
+          <p class="title">Cat shelter website</p>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2016/11/19/14/55/design-1839702_1280.jpg)">
+        <figure class="slide-bgimg" style="background:url(../images/Prime.png);">
           <img src="/images/prime.jpg" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Billie	Pierce</p>
+          <p class="title">Prime number calculator</p>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124672.jpg?w=996&t=st=1705341187~exp=1705341787~hmac=b7c8124f15859a32d08c7173f3de683122a0515bbc0d9d8ae0ec129ed697b894)">
-          <img src="/images/ai.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/AI.png);">
+          <img src="/images/AI.png" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Trevor	Copeland</p>
+          <p class="title">AI image generator</p>
         </div>
       </div>
       <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg)">
-          <img src="/images/cs.jpg" class="entity-img" />
+        <figure class="slide-bgimg" style="background:url(../images/CS.png);">
+          <img src="/images/CS.jpg" class="entity-img" />
         </figure>
         <div class="content">
-          <p class="title">Bernadette	Newman</p>
+          <p class="title">Coming soon</p>
         </div>
       </div>
     </div>
@@ -188,142 +213,51 @@
 </main>
 
 <!--footer-->
-        <footer class="site-footer">
-            <div class="site-footer-top">
-                <div class="container">
-                    <div class="row">
 
-                        <div class="col-lg-6 col-12">
-                            <h2 class="text-white mb-lg-0">Festava Live</h2>
-                        </div>
+<p class="buffer2"></p>
+<div class="footer" id="About">
+  <footer class="text-center text-white" style="background-color: #0EB9FE">
+    <div class="container">
+      <section class="link">
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="ab-text">About</a>
+            </h6>
+        </div>
+    </div>
 
-                        <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                            <ul class="social-icon d-flex justify-content-lg-end">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-twitter"></span>
-                                    </a>
-                                </li>
-    
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-apple"></span>
-                                    </a>
-                                </li>
-    
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-instagram"></span>
-                                    </a>
-                                </li>
+    <hr class="my-5" />
+      <section class="footer">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8" >
+            <p>
+              A portfolio is a record of projects in time, diving into the past gives us a glimpse of what the future could hold. 
+              I hope you enjoy the theme and idea of the page, feel free to take a look and reach me at one of my socials.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-youtube"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-pinterest"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 mb-4 pb-2">
-                        <h5 class="site-footer-title mb-3">Links</h5>
-
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Home</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">About</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Artists</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Schedule</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Pricing</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <h5 class="site-footer-title mb-3">Have a question?</h5>
-
-                        <p class="text-white d-flex mb-1">
-                            <a href="tel: 090-080-0760" class="site-footer-link">
-                                090-080-0760
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex">
-                            <a href="mailto:hello@company.com" class="site-footer-link">
-                                hello@company.com
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                        <h5 class="site-footer-title mb-3">Location</h5>
-
-                        <p class="text-white d-flex mt-3 mb-2">
-                        Silang Junction South, Tagaytay, Cavite, Philippines</p>
-
-                        <a class="link-fx-1 color-contrast-higher mt-3" href="#">
-                            <span>Our Maps</span>
-                            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="site-footer-bottom">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-12 mt-5">
-                            <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
-                        </div>
-
-                        <div class="col-lg-8 col-12 mt-lg-5">
-                            <ul class="site-footer-links">
-                                <li class="site-footer-link-item">
-                                    <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                                </li>
-
-                                <li class="site-footer-link-item">
-                                    <a href="#" class="site-footer-link">Privacy Policy</a>
-                                </li>
-
-                                <li class="site-footer-link-item">
-                                    <a href="#" class="site-footer-link">Your Feedback</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      <section class="text-center mb-5">
+        </a>
+        <a href="k.dubber17@gmail.com">
+          <img src="/images/gmail.png" class="icon"></img>
+        </a>
+        <a href="https://www.linkedin.com/in/keipher-dubber-416869224/" >
+          <img src="images/Linkedin.png" class="icon"></img>
+        </a>
+        <a href="https://github.com/Keipher-Mada/Keipher-Mada.io" class="text-white me-4">
+          <img src="/images/github.png" class="icon" ></img>
+        </a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <a class="text-white" href=""></a>
+    </div>
+  </footer>
+  </div>
+</div>
 
 <!--JS script-->
         <script src="js/jquery.min.js"></script>
