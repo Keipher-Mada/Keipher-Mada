@@ -59,7 +59,7 @@ video{
   right: 0px;
   left: 0px;
   margin-top: 0px;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 
 .sticky-wrapper .navbar {
@@ -69,6 +69,7 @@ video{
 .navbar {
   background: transparent;
   z-index: 1;
+  right: 100px;
 }
 
 /*---------------------------------------
