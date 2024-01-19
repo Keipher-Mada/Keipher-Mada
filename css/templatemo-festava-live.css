@@ -56,7 +56,7 @@ video{
 .sticky-wrapper {
   position: absolute;
   top: 0;
-  right: 70px;
+  right: 0px;
   left: 0px;
   margin-top: 0px;
 }
@@ -107,7 +107,7 @@ video{
 -----------------------------------------*/
 .footer {
   font-size: 18px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .ab-text {
