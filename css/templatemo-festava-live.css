@@ -56,7 +56,7 @@ video{
   position: absolute;
   top: 0;
   right: 0;
-  left: 200px;
+  left: 30px;
   margin-top: 0px;
 }
 
@@ -105,14 +105,13 @@ video{
   SITE FOOTER              
 -----------------------------------------*/
 .footer {
-  font-size: 16px;
-  padding-bottom: 30px;
+  font-size: 18px;
 }
 
 .ab-text {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 0px;
   color: #ffffff;
   padding-top:10px;
   padding-bottom:10px;
