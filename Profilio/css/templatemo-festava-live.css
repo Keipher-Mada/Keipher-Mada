@@ -1,0 +1,231 @@
+h1 {
+  font-size: 120px;
+}
+
+.project-title h1{
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 100px;
+  align-items: center;
+
+}
+
+.buffer {
+  background-color: #000ea9;
+  margin: 0PX;
+  padding: 30PX;
+  }
+
+.buffer2 {
+  position: relative;
+  margin: 100PX;
+  padding: 30PX;
+      }
+
+.project-title {
+  background-color:  #0EB9FEFE;
+  margin: 0PX;
+  padding: 30PX;
+    }
+/*---------------------------------------
+  VIDEO              
+-----------------------------------------*/
+.video-wrap {
+  z-index: ;
+}
+
+.custom-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 1100px;
+  height: 100%;
+}
+
+video{
+  object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/*---------------------------------------
+  NAVIGATION              
+-----------------------------------------*/
+.sticky-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  margin-top: 0px;
+}
+
+.sticky-wrapper .navbar {
+  background-color: transparent;
+}
+
+.navbar {
+  background: transparent;
+  z-index: 9;
+}
+
+/*---------------------------------------
+  HERO        
+-----------------------------------------*/
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+  height: calc(100vh - 05px);
+}
+
+
+.hero-section small {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.hero-section .section-overlay {
+  z-index: 2;
+  opacity: 0;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.hero-section .container .row {
+  height: 100%;
+}
+
+/*---------------------------------------
+  SITE FOOTER              
+-----------------------------------------*/
+.footer {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.ab-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.icon {
+  padding-top: 20px;
+  margin-right: 10px;
+  width:30px;
+}
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .navbar {
+    background-color: var(--dark-color);
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    padding-bottom: 30px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+  }
+
+  .hero-section {
+    padding-top: 150px;
+  }
+
+  .pricing-thumb {
+    padding: 35px;
+  }
+
+  .schedule-table h3 {
+    font-size: 22px;
+  }
+
+  .schedule-table th {
+    padding: 20px;
+  }
+
+  .schedule-table tr, 
+  .schedule-table td {
+    padding: 25px;
+  }
+
+  .ticket-section {
+    padding-top: 130px;
+  }
+
+  .ticket-form {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+}
+
