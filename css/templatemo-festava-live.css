@@ -27,6 +27,7 @@ h1 {
   margin: 0PX;
   padding: 30PX;
     }
+    
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
@@ -56,7 +57,7 @@ video{
   position: absolute;
   top: 0;
   right: 0;
-  left: 30px;
+  left: 0px;
   margin-top: 0px;
 }
 
