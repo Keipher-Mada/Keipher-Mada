@@ -22,7 +22,7 @@
 }
 .swiper-container.nav-slider {
   width: 20%;
-  padding-left: 5px;
+  padding-left: 0px;
 }
 .swiper-container.nav-slider .swiper-slide {
   cursor: pointer;
