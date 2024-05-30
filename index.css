@@ -187,7 +187,7 @@
 }
 
 .item:nth-of-type(2){
-	background-image: url(images/c.gif);
+	background-image: url(images/c-.gif);
   background-size: cover;
 }
 
