@@ -1,7 +1,8 @@
 <!doctype html>
 
 <html lang="en">
-    <head>
+
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,9 +21,9 @@
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         
-        <link  href="index.css" rel="stylesheet">
+        <link  href="css/video-style.css" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         
@@ -31,11 +32,9 @@
          <!-- partial-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
         
-    </head>
-    
-<body>
+</head>
 
-    <main>
+<main>
   
         <nav class="navbar navbar-expand-lg">
                 <div class="navbar">
@@ -65,7 +64,7 @@
                     </div>
                 
                 </div>
-            </nav>
+          </nav>
             
 <!--video and overlay-->
     <section class="hero-section" id="section_1">
@@ -112,127 +111,48 @@
 <!--project section-->
 
 
-<section class="project" id="Pro">
-  <div class="project-title">
-    <h1>PROJECTS</h1>
-  </div>
-</section>
-
-<!-- project slide bar-->
-<body>
-  <!-- partial:index.partial.html -->
-
-  <div class="swiper-container main-slider loading">
-    <div class="swiper-wrapper big-img">
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Cards.png);">
-          <img src="images/Cards.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <a href="https://keipher-mada.github.io/Mrvel_memory_game/" class="title">Marvel snap memory game</a>
-          <p class="caption"></p>
-          <p>Simple memory pair game inspired by the art of marvel snap (html, css and Javascript)</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2020/11/22/17/28/cat-5767334_1280.jpg)">
-          <img src="images/cat.jpg" class="entity-img" />
-        </figure>
-        <div class="content">
-          <a href="https://cat2142.wordpress.com/" class="title">Cat shelter website</a>
-          <p class="caption"></p>
-          <p> A mock cat shelter site using the power of word press</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Prime.png);">
-          <img src="images/Prime.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <a href="https://github.com/Keipher-Mada/Prime/blob/master/PRIME.MAIN.py" class="title">Prime number calculator</a>
-          <p class="caption"></p>
-          <p>Want to know how many prime numbers you have in a set? check out this simple python code</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Weather.png);">
-          <img src="weather.PNG" class="entity-img" >
-        </figure>
-        <div class="content">
-          <a href="https://kd-weather.streamlit.app/#metrics" class="title">Data dashborad</a>
-          <p class="caption"></p>
-          <p>Data visionlisation with Python and streamlit</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/SD.png);">
-          <img src="images/SD.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <a href="https://github.com/Keipher-Mada/Monster-_University_DataBase/tree/main" class="title">School database system</a>
-          <p>A mockup school database set in the theme of Monsters University using C# and visual studio and SQL.</p>
-          <p class="caption"></p>
-        </div>
-      </div>
+  <section class="project" id="Pro-title">
+   <div class="project-title">
+     <h1>PROJECTS</h1>
     </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev swiper-button-white"></div>
-    <div class="swiper-button-next swiper-button-white"></div>
+  </section>
+
+  <section class="project" id="Pro-grid">
+  <div class="grid">
+  <div class="card">
+    <a href="https://keipher-mada.github.io/Mrvel_memory_game/"><img src="images/Cards.png"></a>
+    <div class="card__head">Marvel memory game (Javascript)</div>
   </div>
-  
-  <!-- Thumbnail navigation -->
-  <div class="swiper-container nav-slider loading" style="background-color: #dfe6e9">
-    <div class="swiper-wrapper" role="navigation">
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Cards.png);">
-          <img src="images/Cards.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <p class="title">Marval snap memory game</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background-image:url(https://cdn.pixabay.com/photo/2020/11/22/17/28/cat-5767334_1280.jpg)">
-          <img src="images/cat.jpg" class="entity-img" />
-        </figure>
-        <div class="content">
-          <p class="title">Cat shelter website</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Prime.png);">
-          <img src="images/prime.jpg" class="entity-img" />
-        </figure>
-        <div class="content">
-          <p class="title">Prime number calculator</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/Weather.png);">
-          <img src="images/Weather.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <p class="title">Data visionlisation with Python and streamlit</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <figure class="slide-bgimg" style="background:url(images/SD.png);">
-          <img src="images/SD.png" class="entity-img" />
-        </figure>
-        <div class="content">
-          <p class="title">School database system</p>
-        </div>
-      </div>
-    </div>
+  <div class="card">
+    <a href="https://kd-weather.streamlit.app/#metrics"><img src="images/Weather.png"></a>
+    <div class="card__head">Weather data dash borad (python)</div>
   </div>
- 
-         
+  <div class="card">
+    <a href="https://cat2142.wordpress.com/"><img src="images/cat.jpg"></a>
+    <div class="card__head">Cat shelter (wordpress)</div>
+  </div>
+  <div class="card">
+    <a href="https://github.com/Keipher-Mada/Monster-_University_DataBase/tree/main"><img src="images/SD.png"></a>
+    <div class="card__head">Students registration system (c#)</div>
+  </div>
+  <div class="card">
+    <a href="https://github.com/Keipher-Mada/Prime/blob/master/PRIME.MAIN.py"><img src="/images/Prime.png"></a>
+    <div class="card__head">Prime caculator (python)</div>
+  </div>
+  <div class="card">
+    <img src="images/fish.jpg">
+    <div class="card__head">Deep sea (coming soon)</div>
+  </div>
+  </div>
+  </div>
+  </section>
+
 </main>
 
 <!--footer-->
 
 <p class="buffer2"></p>
-<div class="footer" id="About" id="Pro" name="Pro">
+<div class="footer" id="About">
   <footer class="text-center text-white" style="background-color: #0EB9FE">
     <div class="f-container">
       <section class="link">
