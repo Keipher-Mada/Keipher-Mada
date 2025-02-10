@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Keipher</h1>
 <h3 align="center">A passionate developer from Kent,UK</h3>
 
-- 🌱 I’m currently learning **more about c#**
+- 🌱 I’m currently learning **more about Php**
 
 - 👨‍💻 All of my projects are available at [https://keipher-mada.github.io/Keipher-Mada/](https://keipher-mada.github.io/Keipher-Mada/)
 
