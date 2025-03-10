@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **more about Php**
 
-- 👨‍💻 All of my projects are available at [https://keipher-mada.github.io/Keipher-Mada/](https://keipher-mada.github.io/Keipher-Mada/)
+- 👨‍💻 Most of my projects are available at [https://keipher-mada.github.io/Keipher-Mada/](https://keipher-mada.github.io/Keipher-Mada/)
 
 - 📫 You can reach me on **k.dubber17@gmail.com**
 
